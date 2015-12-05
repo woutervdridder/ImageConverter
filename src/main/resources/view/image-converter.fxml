@@ -1,0 +1,56 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:controller="net.wvdr.ImageController"
+          xmlns:fx="http://javafx.com/fxml" alignment="CENTER_LEFT" hgap="10" vgap="10">
+
+    <ImageView
+            GridPane.columnSpan="5"
+            fitHeight="250"
+            fitWidth="300"
+            preserveRatio="true"
+            fx:id="imageView"
+    />
+
+    <Label
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="1"
+            labelFor="${hex}"
+            text="Hex image"
+    />
+    <TextField
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="1"
+            fx:id="hex"
+    />
+    <Button
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="1"
+            onAction="#convertFromHex"
+            text="Convert from hex"
+    />
+
+    <Label
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="2"
+            labelFor="${base64}"
+            text="Base64 image"
+    />
+    <TextField
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="2"
+            fx:id="base64"
+    />
+    <Button
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="2"
+            onAction="#convertFromBase64"
+            text="Convert from base64"
+    />
+
+    <Button
+            GridPane.rowIndex="3"
+            text="Open image"
+            onAction="#openImage"
+    />
+</GridPane>
