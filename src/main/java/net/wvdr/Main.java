@@ -19,7 +19,7 @@ public class Main extends Application {
         controller.setupStageAndFileChooser(primaryStage); // or what you want to do
 
         primaryStage.setTitle("Image Converter");
-        primaryStage.setScene(new Scene(root, 450, 400));
+        primaryStage.setScene(new Scene(root, 500, 450));
         primaryStage.setResizable(false);
         primaryStage.show();
     }

@@ -1,8 +1,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
 <GridPane fx:controller="net.wvdr.ImageController"
           xmlns:fx="http://javafx.com/fxml" alignment="CENTER_LEFT" hgap="10" vgap="10">
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
 
     <ImageView
             GridPane.columnSpan="5"
