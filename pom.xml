@@ -6,6 +6,7 @@
     <artifactId>imageconverter</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <name>Image Converter</name>
 
     <build>
         <plugins>
@@ -18,6 +19,9 @@
                     <vendor>wvdr.net</vendor>
                     <mainClass>net.wvdr.Main</mainClass>
                     <jfxAppOutputDir>target/</jfxAppOutputDir>
+                    <manifestAttributes>
+                        <Application-Name>ImageConverter</Application-Name>
+                    </manifestAttributes>
                 </configuration>
                 <executions>
                     <execution>
