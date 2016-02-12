@@ -14,8 +14,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/image-converter.fxml"));
-        Parent root = (Parent)loader.load();
-        ImageController controller = (ImageController) loader.getController();
+        Parent root = loader.load();
+        ImageController controller = loader.getController();
         controller.setupStageAndFileChooser(primaryStage); // or what you want to do
 
         primaryStage.setTitle("Image Converter");
